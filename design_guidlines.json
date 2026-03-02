@@ -1,0 +1,124 @@
+{
+  "brand": "Orkestrate",
+  "description": "A marketing orchestration platform built for a new era where teams design goals, not campaigns. Powered by reasoning-based agent swarms, it connects fragmented data, channels, and tools into a single interface.",
+  "visual_identity": {
+    "logomark": {
+      "description": "A single, fluid circular motion symbolising intelligent momentum — clarity, precision, and forward drive. The sweeping arc at its edge represents the shift from complexity to effortless flow.",
+      "variants": [
+        "Horizontal lockup (icon + wordmark)",
+        "Vertical lockup (icon + wordmark stacked)",
+        "Icon only",
+        "Wordmark only"
+      ]
+    },
+    "primary_logo": {
+      "description": "A bold expression of intelligence in motion — a fusion of clarity, confidence, and momentum. Pairs a dynamic circular symbol with a clean, modern wordmark.",
+      "clear_space": "A clear space equal to the height of the Logomark is required on all sides of the logo."
+    },
+    "logo_misuse": {
+      "prohibited": [
+        "Do not distort the logo horizontally",
+        "Do not distort the logo vertically",
+        "Do not skew or bend the logo",
+        "Do not use shadows, glow, blur or any effects",
+        "Do not use incorrect colours",
+        "Do not place the logo on non-brand colours"
+      ]
+    }
+  },
+  "typography": {
+    "primary_typeface": {
+      "name": "Poppins",
+      "usage": {
+        "headings": "Poppins Black",
+        "sub_headings": "Poppins Bold",
+        "body": "Poppins Regular",
+        "captions": "Poppins Light"
+      },
+      "weights": [
+        "Light",
+        "Regular",
+        "Bold",
+        "Black"
+      ],
+      "styles": [
+        "Regular",
+        "Italic",
+        "Bold Italic",
+        "Black Italic"
+      ]
+    },
+    "secondary_typeface": {
+      "name": "Rubik",
+      "weights": [
+        "Light",
+        "Regular"
+      ],
+      "styles": [
+        "Regular",
+        "Italic"
+      ]
+    }
+  },
+  "colours": {
+    "primary": [
+      {
+        "name": "Orkestrate Scarlet Orange",
+        "hex": "#E0422D",
+        "rgb": { "r": 224, "g": 66, "b": 45 },
+        "cmyk": { "c": 6, "m": 89, "y": 93, "k": 1 }
+      },
+      {
+        "name": "Orkestrate Crimson Orange",
+        "hex": "#FAB6AA",
+        "rgb": { "r": 250, "g": 182, "b": 170 },
+        "cmyk": { "c": 0, "m": 34, "y": 26, "k": 0 }
+      },
+      {
+        "name": "Orkestrate Pulse Orange",
+        "hex": "#EB5825",
+        "rgb": { "r": 235, "g": 88, "b": 37 },
+        "cmyk": { "c": 2, "m": 81, "y": 98, "k": 0 }
+      }
+    ],
+    "secondary": [
+      {
+        "name": "Orkestrate Core Orange",
+        "hex": "#E86233",
+        "rgb": { "r": 232, "g": 98, "b": 51 },
+        "cmyk": { "c": 4, "m": 76, "y": 91, "k": 0 }
+      },
+      {
+        "name": "Orkestrate Deep Orange",
+        "hex": "#C63804",
+        "rgb": { "r": 198, "g": 56, "b": 4 },
+        "cmyk": { "c": 16, "m": 91, "y": 100, "k": 6 }
+      },
+      {
+        "name": "Orkestrate Ember Red",
+        "hex": "#BA301D",
+        "rgb": { "r": 186, "g": 48, "b": 29 },
+        "cmyk": { "c": 19, "m": 94, "y": 100, "k": 9 }
+      },
+      {
+        "name": "Orkestrate Signal Red",
+        "hex": "#D3311C",
+        "rgb": { "r": 211, "g": 49, "b": 28 },
+        "cmyk": { "c": 11, "m": 94, "y": 100, "k": 2 }
+      },
+      {
+        "name": "Orkestrate Carbon",
+        "hex": "#131313",
+        "rgb": { "r": 19, "g": 19, "b": 19 },
+        "cmyk": { "c": 73, "m": 67, "y": 66, "k": 81 }
+      }
+    ]
+  },
+  "application": {
+    "social_media": {
+      "platform": "Facebook",
+      "cover": "Full-width orange gradient background with white Orkestrate wordmark centred",
+      "profile_picture": "Orkestrate logomark on white circular background with orange border"
+    }
+  }
+}
