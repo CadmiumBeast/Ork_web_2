@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import IntelligenceSection from "./components/IntelligenceSection";
+import AgentsSection from "./components/AgentsSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         </main>
       </div>
       <IntelligenceSection />
+      <AgentsSection />
     </>
   );
 }
