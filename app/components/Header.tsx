@@ -3,20 +3,31 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+type HeaderZone = "hero" | "intelligence" | "agents";
+
+const zoneStyles: Record<HeaderZone, string> = {
+  hero:         "border-transparent bg-[#FFEDEB]/95",
+  intelligence: "border-zinc-200/80 bg-white/95",
+  agents:       "border-zinc-200/80 bg-[#FFFAF6]/95",
+};
+
 export default function Header() {
-  const [isOnLightSection, setIsOnLightSection] = useState(false);
+  const [zone, setZone] = useState<HeaderZone>("hero");
 
   useEffect(() => {
+    const HEADER_H = 92; // approximate header height in px
+
     const updateHeaderState = () => {
+      const agentsSection = document.getElementById("agents-section");
       const intelligenceSection = document.getElementById("intelligence-section");
 
-      if (!intelligenceSection) {
-        setIsOnLightSection(false);
-        return;
+      if (agentsSection && agentsSection.getBoundingClientRect().top <= HEADER_H) {
+        setZone("agents");
+      } else if (intelligenceSection && intelligenceSection.getBoundingClientRect().top <= HEADER_H) {
+        setZone("intelligence");
+      } else {
+        setZone("hero");
       }
-
-      const sectionTop = intelligenceSection.getBoundingClientRect().top;
-      setIsOnLightSection(sectionTop <= 92);
     };
 
     updateHeaderState();
@@ -31,11 +42,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 border-b transition-colors duration-300 ${
-        isOnLightSection
-          ? "border-zinc-200/80 bg-white/95"
-          : "border-transparent bg-[#FFEDEB]/95"
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 border-b transition-colors duration-300 ${zoneStyles[zone]}`}
     >
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-6 py-5 md:flex-row md:items-center md:justify-between md:px-10 md:py-6">
         <div className="flex items-center">
